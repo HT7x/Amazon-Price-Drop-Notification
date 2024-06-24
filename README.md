@@ -39,7 +39,7 @@ url_price = {
     "https://a.co/d/0dlwWeDl" : 30, 
     "https://a.co/d/0irn96jy" : 60
 }
-
+# email address you want to recieve the notification from
 rec_email = "ht.bh@live.com"
 ############################################
 ```
@@ -48,13 +48,12 @@ rec_email = "ht.bh@live.com"
 You can run the script directly:
 
 ```bash
-python amazon_price_tracker.py
+python main.py
 ```
 Alternatively, you can use the provided run_script.sh for ease of execution:
 
 1. Ensure run_script.sh has the following content:
 ```bash
-Copy code
 #!/bin/bash
 python3 main.py
 ```
@@ -97,6 +96,7 @@ This will ensure that the script runs every day at the specified time, checking 
 
 * Make sure your email provider allows sending emails from external applications. You might need to enable "less secure apps" if using Gmail.
 * Use a dedicated email account for this script to avoid exposing your primary email account.
+* This script is written specifically for sending emails from gmail. This might not be compatible with other email providers. 
 * Run this on the cloud for better automation. 
 
 ## License
